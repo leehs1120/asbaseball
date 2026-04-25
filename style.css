@@ -51,9 +51,10 @@ body {
 /* ===== 히어로 (메인 화면) ===== */
 .hero {
     height: 100vh;
-    background: url("main.jpg") no-repeat center/cover;
+    background: url("images/main.jpg") no-repeat center/cover;
     position: relative;
 }
+
 
 /* 어두운 오버레이 */
 .overlay {
