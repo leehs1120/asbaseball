@@ -1,22 +1,38 @@
-let slides = document.querySelectorAll(".slide");
-let index = 0;
+// 🔥 헤더 스크롤 효과
+const header = document.querySelector(".header");
 
-function show(i) {
-    slides.forEach(s => s.classList.remove("active"));
-    slides[i].classList.add("active");
-}
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        header.style.background = "white";
+        header.style.color = "black";
 
-document.querySelector(".next").onclick = () => {
-    index = (index + 1) % slides.length;
-    show(index);
-};
+        // 메뉴 글자 색도 같이 변경
+        document.querySelectorAll(".header a").forEach(link => {
+            link.style.color = "black";
+        });
 
-document.querySelector(".prev").onclick = () => {
-    index = (index - 1 + slides.length) % slides.length;
-    show(index);
-};
+    } else {
+        header.style.background = "transparent";
+        header.style.color = "white";
 
-setInterval(() => {
-    index = (index + 1) % slides.length;
-    show(index);
-}, 3000);
+        document.querySelectorAll(".header a").forEach(link => {
+            link.style.color = "white";
+        });
+    }
+});
+
+
+// 🔥 부드러운 스크롤 (메뉴 클릭 시)
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute("href"));
+
+        if (target) {
+            target.scrollIntoView({
+                behavior: "smooth"
+            });
+        }
+    });
+});
