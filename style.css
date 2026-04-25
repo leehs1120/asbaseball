@@ -23,6 +23,36 @@ body {
     z-index: 100;
 }
 
+/* 선수 페이지 */
+.players-page {
+    margin-top: 120px; /* 🔥 핵심 */
+    text-align: center;
+    padding: 50px;
+}
+
+/* 카드 */
+.player-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    background: #132f4c;
+    padding: 30px;
+    width: 180px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.player-card:hover {
+    background: #e60023;
+    transform: scale(1.1);
+}
+
 /* 중앙 로고 */
 .logo img {
     height: 60px;
