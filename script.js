@@ -1,23 +1,22 @@
-const slides = document.querySelectorAll(".slide");
+let slides = document.querySelectorAll(".slide");
 let index = 0;
 
-function showSlide(i) {
+function show(i) {
     slides.forEach(s => s.classList.remove("active"));
     slides[i].classList.add("active");
 }
 
-function nextSlide() {
+document.querySelector(".next").onclick = () => {
     index = (index + 1) % slides.length;
-    showSlide(index);
-}
+    show(index);
+};
 
-function prevSlide() {
+document.querySelector(".prev").onclick = () => {
     index = (index - 1 + slides.length) % slides.length;
-    showSlide(index);
-}
+    show(index);
+};
 
-document.querySelector(".next").onclick = nextSlide;
-document.querySelector(".prev").onclick = prevSlide;
-
-/* 자동 슬라이드 */
-setInterval(nextSlide, 4000);
+setInterval(() => {
+    index = (index + 1) % slides.length;
+    show(index);
+}, 3000);
