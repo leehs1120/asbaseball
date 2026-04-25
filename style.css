@@ -88,3 +88,34 @@ body {
     background: #e60023;
     color: white;
 }
+
+.players-page {
+    margin-top: 120px;
+    text-align: center;
+    color: white;
+    background: #0b1d2a;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.player-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    background: #132f4c;
+    padding: 30px;
+    width: 180px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.player-card:hover {
+    background: #e60023;
+    transform: scale(1.1);
+}
