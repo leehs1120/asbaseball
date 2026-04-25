@@ -1,16 +1,23 @@
-const search = document.getElementById("search");
-const players = document.querySelectorAll(".player-card");
+const slides = document.querySelectorAll(".slide");
+let index = 0;
 
-search.addEventListener("keyup", function () {
-    const value = search.value.toLowerCase();
+function showSlide(i) {
+    slides.forEach(s => s.classList.remove("active"));
+    slides[i].classList.add("active");
+}
 
-    players.forEach(player => {
-        const name = player.innerText.toLowerCase();
+function nextSlide() {
+    index = (index + 1) % slides.length;
+    showSlide(index);
+}
 
-        if (name.includes(value)) {
-            player.style.display = "block";
-        } else {
-            player.style.display = "none";
-        }
-    });
-});
+function prevSlide() {
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+}
+
+document.querySelector(".next").onclick = nextSlide;
+document.querySelector(".prev").onclick = prevSlide;
+
+/* 자동 슬라이드 */
+setInterval(nextSlide, 4000);
