@@ -7,40 +7,72 @@
 </head>
 <body>
 
-<header>
-    <h1>⚾ 안성 Sea Eels 선수 소개</h1>
-    <input type="text" id="search" placeholder="선수 검색...">
-</header>
+<!-- 네비게이션 -->
+<nav class="navbar">
+    <div class="menu left">
+        <a href="#">TEAM</a>
+        <a href="#players">PLAYERS</a>
+        <a href="#">CONTENTS</a>
+    </div>
 
-<section class="player-container" id="players">
+    <div class="logo">SEA EELS</div>
 
-    <a href="players/leehs.html" class="player-card">
-        <h2>이현승</h2>
-        <p>포지션: 2루수</p>
-    </a>
+    <div class="menu right">
+        <a href="#">GAME</a>
+        <a href="#">TICKET</a>
+        <a href="#">MEMBERSHIP</a>
+    </div>
+</nav>
 
-    <a href="players/leeyj.html" class="player-card">
-        <h2>이영조</h2>
-        <p>포지션: 타자</p>
-    </a>
+<!-- 메인 화면 -->
+<section class="hero">
+    <div class="overlay">
+        <h1>WELCOME TO SEA EELS</h1>
+        <p>2026 시즌 진행중</p>
 
-       <a href="players/parkjw.html" class="player-card">
-        <h2>박정우</h2>
-        <p>포지션: 포수</p>
-    </a>
-    
-       <a href="players/yoonjw.html" class="player-card">
-        <h2>윤종원</h2>
-        <p>포지션: 타자</p>
-    </a>
+        <div class="score">
+            <span>SEA EELS</span>
+            <h2>4 : 3</h2>
+            <span>RIVALS</span>
+        </div>
 
-    <a href="players/gwakyh.html" class="player-card">
-        <h2>곽영훈</h2>
-        <p>포지션: 미정</p>
-    </a>
+        <div class="buttons">
+            <button>경기 일정</button>
+            <button class="red">티켓 예매</button>
+        </div>
+    </div>
+</section>
+
+<!-- 선수 섹션 -->
+<section class="players-section" id="players">
+
+    <h2>PLAYERS</h2>
+
+    <div class="player-container">
+
+        <a href="players/gwakyh.html" class="player-card">
+            <h3>곽영훈</h3>
+        </a>
+
+        <a href="players/leehs.html" class="player-card">
+            <h3>이현승</h3>
+        </a>
+
+        <a href="players/leeyj.html" class="player-card">
+            <h3>이영조</h3>
+        </a>
+
+        <a href="players/parkjw.html" class="player-card">
+            <h3>박정우</h3>
+        </a>
+
+        <a href="players/yoonjw.html" class="player-card">
+            <h3>윤종원</h3>
+        </a>
+
+    </div>
 
 </section>
 
-<script src="script.js"></script>
 </body>
 </html>
