@@ -51,7 +51,7 @@ body {
 /* ===== 히어로 (메인 화면) ===== */
 .hero {
     height: 100vh;
-    background: url("images/main.jpg") no-repeat center/cover;
+    background: url("images/main1.jpg") no-repeat center/cover;
     position: relative;
 }
 
