@@ -1,78 +1,63 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <title>안성 Sea Eels</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Sea Eels</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- 네비게이션 -->
+<!-- 네비 -->
 <nav class="navbar">
-    <div class="menu left">
+    <div class="menu">
         <a href="#">TEAM</a>
         <a href="#players">PLAYERS</a>
-        <a href="#">CONTENTS</a>
-    </div>
-
-    <div class="logo">SEA EELS</div>
-
-    <div class="menu right">
         <a href="#">GAME</a>
-        <a href="#">TICKET</a>
-        <a href="#">MEMBERSHIP</a>
     </div>
 </nav>
 
-<!-- 메인 화면 -->
-<section class="hero">
-    <div class="overlay">
-        <h1>WELCOME TO SEA EELS</h1>
-        <p>2026 시즌 진행중</p>
+<!-- 🔥 슬라이드 -->
+<section class="slider">
 
-        <div class="score">
-            <span>SEA EELS</span>
-            <h2>4 : 3</h2>
-            <span>RIVALS</span>
-        </div>
-
-        <div class="buttons">
-            <button>경기 일정</button>
-            <button class="red">티켓 예매</button>
+    <div class="slide active" style="background-image:url('img1.jpg')">
+        <div class="content">
+            <h1>SEA EELS WIN</h1>
+            <p>4 : 3 역전승</p>
         </div>
     </div>
+
+    <div class="slide" style="background-image:url('img2.jpg')">
+        <div class="content">
+            <h1>HOME GAME</h1>
+            <p>오늘 경기 진행중</p>
+        </div>
+    </div>
+
+    <div class="slide" style="background-image:url('img3.jpg')">
+        <div class="content">
+            <h1>NEW SEASON</h1>
+            <p>2026 시즌 시작</p>
+        </div>
+    </div>
+
+    <!-- 버튼 -->
+    <div class="nav-btn prev">&#10094;</div>
+    <div class="nav-btn next">&#10095;</div>
+
 </section>
 
-<!-- 선수 섹션 -->
-<section class="players-section" id="players">
-
+<!-- 선수 -->
+<section class="players" id="players">
     <h2>PLAYERS</h2>
-
-    <div class="player-container">
-
-        <a href="players/gwakyh.html" class="player-card">
-            <h3>곽영훈</h3>
-        </a>
-
-        <a href="players/leehs.html" class="player-card">
-            <h3>이현승</h3>
-        </a>
-
-        <a href="players/leeyj.html" class="player-card">
-            <h3>이영조</h3>
-        </a>
-
-        <a href="players/parkjw.html" class="player-card">
-            <h3>박정우</h3>
-        </a>
-
-        <a href="players/yoonjw.html" class="player-card">
-            <h3>윤종원</h3>
-        </a>
-
+    <div class="player-list">
+        <a href="players/gwakyh.html">곽영훈</a>
+        <a href="players/leehs.html">이현승</a>
+        <a href="players/leeyj.html">이영조</a>
+        <a href="players/parkjw.html">박정우</a>
+        <a href="players/yoonjw.html">윤종원</a>
     </div>
-
 </section>
 
+<script src="script.js"></script>
 </body>
 </html>
