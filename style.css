@@ -85,3 +85,47 @@ body {
     height: calc(100vh - 100px);
     background: url("images/main11.png") no-repeat center/cover;
 }
+/* 선수 카드 업그레이드 */
+.player-card {
+    width: 220px;
+    background: #132f4c;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: left;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* 이미지 */
+.player-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+/* 정보 영역 */
+.player-card .info {
+    padding: 15px;
+}
+
+.player-card h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.player-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* hover 효과 */
+.player-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+/* hover 시 색 강조 */
+.player-card:hover .info {
+    background: #e60023;
+    color: white;
+}
